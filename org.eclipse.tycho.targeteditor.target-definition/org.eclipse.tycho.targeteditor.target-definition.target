@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?><target includeMode="feature" name="Tycho Target Editor Target Definition" sequenceNumber="108">
+<locations>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.swtbot.eclipse.feature.group" version="2.2.0.201401081015"/>
+<unit id="org.eclipse.swtbot.feature.group" version="2.2.0.201401081015"/>
+<unit id="org.eclipse.swtbot.forms.feature.group" version="2.2.0.201401081015"/>
+<repository location="http://download.eclipse.org/technology/swtbot/releases/latest"/>
+</location>
+<location includeAllPlatforms="false" includeConfigurePhase="false" includeMode="planner" includeSource="true" type="InstallableUnit">
+<unit id="org.eclipse.pde.feature.group" version="3.8.2.v20130116-091538-7c7wFj0FFt6Zr9bd4AM1JEQMS"/>
+<unit id="org.eclipse.platform.ide" version="4.2.2.M20130204-1200"/>
+<unit id="org.eclipse.jdt.feature.group" version="3.8.2.v20130116-090414-8-8nFu3FNOfwKLRuqgXKIy9z0I83"/>
+<repository location="http://download.eclipse.org/eclipse/updates/4.2"/>
+</location>
+</locations>
+</target>

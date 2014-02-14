@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<repositories version="2.0" xmlns="urn:org.eclipse.tycho:TychoTargetEditor:RecommendedRepositories:1.0">
+  <!-- Just a file that gives an error when parsing it (has wrong version) -->
+  <repository name="JPaaS SDK">
+    <groupId>com.sap.core.distro.jpaas</groupId>
+    <artifactId>com.sap.core.jpaas.sdk</artifactId>
+    <version>0.1.16</version>
+    <classifier>assembly</classifier>
+    <description>This is a long description of the JPaaS SDK
+  
+A line in a new paragraph.
+    </description>
+    <extension>zip</extension>
+  </repository>
+</repositories>

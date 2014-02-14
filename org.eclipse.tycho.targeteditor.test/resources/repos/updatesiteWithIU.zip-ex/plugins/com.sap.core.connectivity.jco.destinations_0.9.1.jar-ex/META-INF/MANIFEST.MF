@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Created-By: Apache Maven
+Built-By: hudson
+Build-Jdk: 1.6.0_21
+Export-Package: com.sap.core.connectivity.jco.destinations
+Bundle-Vendor: SAP AG
+Bundle-ActivationPolicy: lazy
+Bundle-Version: 0.9.1
+Bundle-Name: com.sap.core.connectivity.jco.destinations
+Bundle-Activator: com.sap.core.connectivity.jco.destinations.Activator
+Bundle-ManifestVersion: 2
+Import-Package: com.sap.conn.jco.ext,com.sap.security.destinations,com
+ .sap.security.auth.service,com.sap.tc.logging,org.osgi.framework,org.
+ osgi.service.cm,org.osgi.util.tracker
+Bundle-SymbolicName: com.sap.core.connectivity.jco.destinations
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+

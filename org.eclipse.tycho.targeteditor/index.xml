@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (c) 2011, 2014 SAP AG and others.
+ - All rights reserved. This program and the accompanying materials
+ - are made available under the terms of the Eclipse Public License v1.0
+ - which accompanies this distribution, and is available at
+ - http://www.eclipse.org/legal/epl-v10.html
+ -
+ - Contributors:
+ -    SAP AG - initial documentation
+ -->
+
+<index version="1.0">
+   <entry keyword="Tycho Target Editor">
+      <topic href="doc/content/ldi_target_editor.html" />
+   </entry>
+   <entry keyword="Target Editor">
+      <topic href="doc/content/ldi_target_editor.html" />
+   </entry>
+   <entry keyword="Add Repository">
+      <topic href="doc/content/add_repository.html" />
+   </entry>
+</index>
+

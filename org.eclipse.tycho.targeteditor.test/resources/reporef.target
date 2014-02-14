@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="allRepoTypes">
+<locations>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="dummy1.feature.id.feature.group" version="1.1.1"/>
+<unit id="dummy2.feature.id.feature.group" version="1.1.2"/>
+<repository location="http://nexus:8081/nexus/content/repositories/build.milestones.unzip/org/eclipse/tycho/test/testartifactId/1.1.1/testartifactId-1.1.1-assembly.zip-unzip/"/>
+</location>
+<location includeAllPlatforms="false" includeMode="planner" type="InstallableUnit">
+<unit id="dummy2.feature.id.feature.group" version="2.1.1"/>
+<repository location="http://dummy/repo"/>
+</location>
+</locations>
+</target>

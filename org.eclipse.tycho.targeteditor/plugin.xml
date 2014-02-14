@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+ - Copyright (c) 2011, 2014 SAP AG and others.
+ - All rights reserved. This program and the accompanying materials
+ - are made available under the terms of the Eclipse Public License v1.0
+ - which accompanies this distribution, and is available at
+ - http://www.eclipse.org/legal/epl-v10.html
+ -
+ - Contributors:
+ -    SAP AG - initial API and implementation
+ -->
+
+<plugin>
+	<extension
+	      point="org.eclipse.ui.editors">
+		<editor
+			name="Tycho Target Editor"
+			extensions="target"
+			icon="icons/ldiEditorLogo.png"
+			class="org.eclipse.tycho.targeteditor.LDITargetEditor"
+			contributorClass="org.eclipse.pde.internal.ui.editor.targetdefinition.TargetEditorContributor"
+			id="org.eclipse.tycho.targeteditor.LDITargetEditor">
+		</editor>
+	</extension>
+	<extension id="org.eclipse.tycho.targeteditor.helpcontexts" name="LDIEditorHelpContxt" point="org.eclipse.help.contexts">
+	  <contexts
+	        file="doc/helpContext.xml"
+	        plugin="org.eclipse.tycho.targeteditor">
+	  </contexts>
+	</extension>
+    <extension point="org.eclipse.help.toc">
+  		<toc file="toc.xml" primary="true"/>
+ 	</extension>
+ 	<extension point="org.eclipse.help.index">
+  		<index file="index.xml"/>
+ 	</extension>
+  <extension
+        point="org.eclipse.ui.preferencePages">
+     <page
+           class="org.eclipse.tycho.targeteditor.preferences.TargetEditorPreferencePage"
+           id="org.eclipse.tycho.targeteditor.preferences.TargetEditorPreferencePage"
+           name="Tycho Target Editor">
+     </page>
+  </extension>
+  <extension
+        point="org.eclipse.core.runtime.preferences">
+     <initializer
+           class="org.eclipse.tycho.targeteditor.preferences.PreferenceInitializer">
+     </initializer>
+  </extension>
+ 	 	
+</plugin>

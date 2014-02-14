@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ - Copyright (c) 2011, 2014 SAP AG and others.
+ - All rights reserved. This program and the accompanying materials
+ - are made available under the terms of the Eclipse Public License v1.0
+ - which accompanies this distribution, and is available at
+ - http://www.eclipse.org/legal/epl-v10.html
+ -
+ - Contributors:
+ -    SAP AG - initial API and implementation
+ -->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns="urn:org.eclipse.tycho:TychoTargetEditor:RecommendedRepositories:1.0"
+	targetNamespace="urn:org.eclipse.tycho:TychoTargetEditor:RecommendedRepositories:1.0"
+	elementFormDefault="qualified" version="1.0">
+
+	<xsd:element name="repositories">
+		<xsd:annotation>
+			<xsd:documentation>
+				Specifies the recommended repositories that could
+				be added to the target
+				definition file using the Tycho Target Editor.
+			</xsd:documentation>
+		</xsd:annotation>
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="repository" maxOccurs="unbounded">
+					<xsd:complexType>
+						<xsd:all>
+							<xsd:element name="groupId" type="xsd:string"></xsd:element>
+							<xsd:element name="artifactId" type="xsd:string"></xsd:element>
+							<xsd:element name="version" type="xsd:string"></xsd:element>
+							<xsd:element name="classifier" type="xsd:string"></xsd:element>
+							<xsd:element name="description" type="xsd:string">
+								<xsd:annotation>
+									<xsd:documentation>
+										Long description of the repository. May
+										contain several lines of
+										text. Helps the user to decide if he
+										needs to include this
+										repository into the target platform of
+										his project.
+									</xsd:documentation>
+								</xsd:annotation>
+							</xsd:element>
+							<xsd:element name="extension">
+								<xsd:simpleType>
+									<xsd:restriction base="xsd:string">
+										<xsd:enumeration value="zip" />
+										<xsd:enumeration value="jar" />
+									</xsd:restriction>
+								</xsd:simpleType>
+							</xsd:element>
+						</xsd:all>
+						<xsd:attribute name="name" type="xsd:string" use="required">
+							<xsd:annotation>
+								<xsd:documentation>
+									Name of the repository. A short display name.
+									Helps the user to identify a repository in the list.
+								</xsd:documentation>
+							</xsd:annotation>
+						</xsd:attribute>
+					</xsd:complexType>
+				</xsd:element>
+			</xsd:sequence>
+			<xsd:attribute name="version" type="xsd:string" use="required" />
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

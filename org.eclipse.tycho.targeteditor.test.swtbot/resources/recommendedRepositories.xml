@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<repositories version="1.0"
+	xmlns="urn:org.eclipse.tycho:TychoTargetEditor:RecommendedRepositories:1.0">
+	<repository name="JPaaS SDK">
+		<groupId>com.sap.core.distro.jpaas</groupId>
+		<artifactId>com.sap.core.jpaas.sdk</artifactId>
+		<version>0.1.18</version>
+		<classifier>assembly</classifier>
+		<description>JPaaS SDK
+		</description>
+		<extension>zip</extension>
+	</repository>
+	<repository name="Phoenix">
+		<groupId>com.sap.ui.phoenix</groupId>
+		<artifactId>phx-update-site</artifactId>
+		<version>0.16.0</version>
+		<classifier>assembly</classifier>
+		<description>Phoenix
+		</description>
+		<extension>zip</extension>
+	</repository>
+</repositories>

@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<!--
+ - Copyright (c) 2011, 2014 SAP AG and others.
+ - All rights reserved. This program and the accompanying materials
+ - are made available under the terms of the Eclipse Public License v1.0
+ - which accompanies this distribution, and is available at
+ - http://www.eclipse.org/legal/epl-v10.html
+ -
+ - Contributors:
+ -    SAP AG - initial documentation
+ -->
+
+<html lang="en">
+<head>
+</head>
+<body>
+<h1>Adding a Repository</h1>
+ 
+<p>The "Add a Repository" wizard allows to add a repository to a target definition. 
+<br> All features in the repository are automatically added to the target definition file with the generic latest version "0.0.0"
+</p>
+ 
+<h2>The "Add a Repository" Wizard</h2>
+ 
+<h3>Opening the Add Repository Wizard</h3>
+ 
+The wizard can be opened by clicking on the "Add Repository" button in the "Repositories" page in the Tycho Target Editor.
+<h3>Details of the Add Repository Wizard</h3>
+A repository can be added by either: <br>
+<ul> 
+<li>Selecting a repository from the recommended list of repositories </li>
+<li>Adding a repository manually by entering the Maven coordinates </li>
+</ul>
+
+<h4>Recommended Repository</h4>
+<img src="images/add_repository_select_options.png">
+<p>
+This page allows to add a repository by selecting a repository from the recommended list of repositories.
+<ul>
+<li>Select a repository from the list and review the repository details by using on the "Next" button.</li>
+<li>The selected repository can also be added directly to the target file by using on the "Finish" button.</li>
+<li>The list of recommended repositories is retrieved from an URL that can be configured in the Preferences. The preference page can be opened by clicking on the "Configure" link.</li></ul>
+</p>
+<h4>Adding a repository manually</h4>
+A repository can be added manually by clicking on the option "Specify GAV manually or from clipboard"
+<img src="images/add_repository_manually.png">
+<br>
+<p> User has to enter the following details (maven coordinates) to add a Repository:
+<br>
+<ul>
+<ul>
+<li>
+<b>Group ID: </b> <br>
+- Group ID of the repository to be added 
+<br>
+</li>
+</ul>
+<ul>
+<li>
+<b>Artifact ID: </b> <br>
+- Artifact ID of the repository to be added 
+<br>
+</li>
+</ul>
+<ul>
+<li>
+<b>Version: </b> <br>
+- Version of the repository to be added 
+<br>
+</li>
+</ul>
+<ul>
+<li>
+<b>Classifier: </b> <br>
+- Classifier information of the repository. E.g. : assembly 
+<br> User can leave this field empty if the repository has no classifier specified.
+</li> 
+</ul>
+<ul>
+<li>
+<b>File Extension: </b> <br>
+- Currently the supported File Extension is ".zip" and this field is not editable.
+</li> 
+</ul>
+</ul>
+<ul>
+The fields of the dialog are prefilled if the clipboard contains either a valid Nexus Repository URL or a GAV xml snippet copied from the Nexus UI 
+(e.g. Nexus Search -> select an artifact form the search results -> tab Maven Information). 
+<h4>Possible validation error messages: </h4>
+<ul> 
+<li> Group ID, Artifact ID, Version (GAV) of a repository are mandatory fields that need to be specified </li>
+<li>Repository with the given group id and artifact id already exists in the target file </li>
+<li>No valid p2 repository with the specified parameters could be found</li>
+<li>Specified version of the requested repository could not be found on Nexus 
+<br>
+- Possible Reason: p2 Repositories not available in Nexus cannot be added</li>
+ 
+<li>Given location is either not a valid p2 repository or does not contain any Installable Units<br>
+- Possible Reason: Invalid p2 repositories or empty repositories cannot be added.
+</li>
+</ul>
+</ul>
+<br>
+</p>
+See also : <a href="ldi_target_editor.html"> Tycho Target Editor </a>
+</body>
+ 
+</html>

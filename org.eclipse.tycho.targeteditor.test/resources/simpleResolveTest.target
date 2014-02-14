@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.6"?>
+
+<target name="simpleResolveTest" sequenceNumber="6">
+<locations>
+<location id="dummy1.feature.id.feature.group" path="C:\lets\assume\this\folder\does\not\exist" type="Feature"/>
+<location id="dummy2.feature.id.feature.group" path="C:\lets\assume\this\folder\does\not\exist\aswell" type="Feature"/>
+</locations>
+</target>

@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tycho Target Editor SWTBot Tests (Incubation)
+Bundle-SymbolicName: org.eclipse.tycho.targeteditor.test.swtbot;singleton:=true
+Bundle-Version: 0.11.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit4,
+ org.eclipse.swtbot.go,
+ org.eclipse.swtbot.forms.finder
+Fragment-Host: org.eclipse.tycho.targeteditor

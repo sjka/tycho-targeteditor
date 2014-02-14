@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature id="org.eclipse.tycho.targeteditor.feature">
+      <category name="org.eclipse.tycho.targeteditor.category"/>
+   </feature>
+   <category-def name="org.eclipse.tycho.targeteditor.category" label="Tycho Target Editor">
+      <description>
+         Tycho Target Editor
+      </description>
+   </category-def>
+</site>
