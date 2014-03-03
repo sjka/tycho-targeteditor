@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<site>
-   <description>
-      JCoDestination Service
-   </description>
-
-   <feature url="features/com.sap.core.connectivity.jco.destinations_0.9.1.jar" id="com.sap.core.connectivity.jco.destinations" version="0.9.1"/>
-</site>
