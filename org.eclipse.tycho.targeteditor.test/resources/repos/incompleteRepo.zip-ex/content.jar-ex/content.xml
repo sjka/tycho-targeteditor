@@ -29,10 +29,8 @@
       </touchpointData>
     </unit>
     <unit id='testFeature.feature.jar' version='1.0.0'>
-      <properties size='3'>
+      <properties size='1'>
         <property name='org.eclipse.equinox.p2.name' value='TestFeature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
       </properties>
       <provides size='3'>
         <provided namespace='org.eclipse.equinox.p2.iu' name='testFeature.feature.jar' version='1.0.0'/>
@@ -53,21 +51,11 @@
           </instruction>
         </instructions>
       </touchpointData>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
     <unit id='testFeature.feature.group' version='1.0.0' singleton='false'>
       <update id='testFeature.feature.group' range='[0.0.0,1.0.0)' severity='0'/>
-      <properties size='4'>
+      <properties size='2'>
         <property name='org.eclipse.equinox.p2.name' value='TestFeature'/>
-        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
-        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
         <property name='org.eclipse.equinox.p2.type.group' value='true'/>
       </properties>
       <provides size='1'>
@@ -82,14 +70,6 @@
         </required>
       </requires>
       <touchpoint id='null' version='0.0.0'/>
-      <licenses size='1'>
-        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
-          [Enter License Description here.]
-        </license>
-      </licenses>
-      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
-        [Enter Copyright Description here.]
-      </copyright>
     </unit>
   </units>
 </repository>
